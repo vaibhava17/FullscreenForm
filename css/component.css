@@ -11,17 +11,19 @@
 }
 
 /* Title */
-.fs-title {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 40px;
-	width: 100%;
-}
+@media screen and (min-width: 1050px) {
+	.fs-title {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 40px;
+		width: 100%;
+	}
 
-.fs-title h1 {
-	margin: 0;
+	.fs-title h1 {
+		margin: 0;
+	}
 }
 
 /* Form */
@@ -46,24 +48,25 @@
 .fs-message-error {
 	max-width: 960px;
 }
-
-.fs-form-overview {
-	padding: 2.5em 30% 6em;
-	width: 100%;
-	height: 100%;
-	background: #fffed8;
-	color: #D6AD60;
-	font-size: 1.2em;
+@media screen and (min-width: 1050px) {
+	.fs-form-overview {
+		padding: 2.5em 30% 6em;
+		width: 100%;
+		height: 100%;
+		background: #D6AD60;
+		color: #fff;
+		font-size: 1.2em;
+	}
 }
+	.fs-form-overview .fs-fields::before {
+		display: block;
+		margin-bottom: 2.5em;
+		color: #ffffff;
+		content: 'Review & Submit';
+		font-weight: 700;
+		font-size: 1.85em;
+	}
 
-.fs-form-overview .fs-fields::before {
-	display: block;
-	margin-bottom: 2.5em;
-	color: #D6AD60;
-	content: 'Review & Submit';
-	font-weight: 700;
-	font-size: 1.85em;
-}
 
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
 .fs-form.fs-show {
